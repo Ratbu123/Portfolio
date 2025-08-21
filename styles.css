@@ -497,7 +497,6 @@ body, .section, header, footer, form input, form textarea {
     }
 }
 
-
 @media (max-width: 768px) {
     .banner h2 {
         font-size: 2rem; /* Reduce size for phones */
