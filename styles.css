@@ -450,3 +450,49 @@ body, .section, header, footer, form input, form textarea {
     color: #3498db; /* Add a slight color to the heading */
     text-align: center; /* Center-align the title */
 }
+
+/* Hamburger button */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 20px;
+    z-index: 20;
+}
+
+/* Nav menu default hidden (with transition) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        background: rgba(255, 255, 255, 0.95);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
