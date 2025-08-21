@@ -496,3 +496,49 @@ body, .section, header, footer, form input, form textarea {
         margin: 10px 0;
     }
 }
+
+
+@media (max-width: 768px) {
+    .banner h2 {
+        font-size: 2rem; /* Reduce size for phones */
+    }
+
+    .banner p {
+        font-size: 1rem; /* Reduce size for phones */
+    }
+
+    .home-text h1 {
+        font-size: 1.8rem;
+    }
+
+    #developer h2 {
+        font-size: 1.8rem;
+    }
+
+    .developer-text {
+        font-size: 1rem;
+    }
+
+    .home-content {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center;
+    }
+
+    .home-text {
+        margin-left: 0;
+    }
+
+    .developer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .developer-img-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .section {
+        padding: 30px 20px;
+    }
+}
